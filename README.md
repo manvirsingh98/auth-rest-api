@@ -1,9 +1,9 @@
 "# auth-restApi" 
  
-Used Stack:
+# Used Stack:
 
-Nodejs/Express
-MongoDB/cluster
+* Nodejs/Express
+* MongoDB/cluster
 
 //npm Modules
 @hapi/joi -> form validation
