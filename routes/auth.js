@@ -44,21 +44,26 @@ router.post('/login', async (req,res) => {
 
     //Lets validate the data before we a User
     const {error} = loginValidation(req.body);
-    if(error) return res.send(error.details[0].message)
+    if(error) return res.status(400).send(error.details[0].message)
 
     //Checking if the email exists
     const user = await User.findOne({email: req.body.email});
-    if(!user) return res.send('Email is wrong!')
+    if(!user) return res.status(400).send('Email is wrong!')
 
     //Check Password is correct
     const validPass = await bcrypt.compare(req.body.password, user.password);
-    if(!validPass) return res.send('Invalid Password');
+    if(!validPass) return res.status(400).send('Invalid Password');
 
     //Create and assign a token
     const token = jwt.sign({_id: user._id}, process.env.TOKEN_SECRET);
-    // res.header('auth-token', token).send(token);
-    res.header('auth-token', token);
-    res.send('successfull Login')
+    res.header('auth-token', token).status(200)
+
+    // store posted data in the session
+    req.session.token = token;
+    req.session.user = req.body.email;
+    res.status(200).send('successfull Login')
+     
+     
 });
 
 

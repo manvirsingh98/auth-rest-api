@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const hbs = require('express-handlebars');
+const session = require('express-session');
 
 //Import Routes
 const authRoute = require('./routes/auth');
@@ -29,6 +30,12 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 app.use(cors());
 app.use(express.json());
+app.use(session({
+    secret: 'secret',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { maxAge: 6000 }
+}));
 
 
 //Route Middlewares
