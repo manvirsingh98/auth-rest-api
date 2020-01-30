@@ -34,7 +34,7 @@ app.use(session({
     secret: 'secret',
     resave: false,
     saveUninitialized: true,
-    cookie: { maxAge: 6000 }
+    cookie: { maxAge: 600000 }
 }));
 
 
@@ -42,5 +42,8 @@ app.use(session({
 app.use('/', route);
 app.use('/api/user', authRoute);
 app.use('/api/posts', postRoute);
+app.get('*', function(req, res){
+    res.status(404).send('404 Not Found???');
+  });
 
 app.listen(3000, () => console.log('Server up and running!'));

@@ -19,10 +19,21 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: var(--font-family);
+  color: #868e96;
 }
 
+.border-primary {
+  border-color: mediumslateblue !important;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
 body .admin {
   display: grid;
   place-items: center;
@@ -49,6 +60,7 @@ body .admin {
 
 .admin .form {
   position: relative;
+  background-color: var(--color-tertiary);
   width: 100%;
   max-width: 450px;
   margin: 0 auto;
@@ -253,9 +265,96 @@ body .admin {
 }
 
 .languages {
-  padding: 5rem;
-  padding:5rem;
+  padding: 3rem;
+  padding:3rem;
 }
-#language {
-  margin-top: -16%;;
+
+.bottom-line {
+  width: 10%;
+    border-width: 3px;
+    border-color: mediumslateblue;
+    margin-bottom: 25px;
 }
+
+.dev-icons {
+  font-size: 3rem;
+}
+.dev-icons .list-inline-item i:hover {
+  color: mediumslateblue;
+}
+.list-inline-item:not(:last-child) {
+  margin-right: .5rem;
+}
+
+/* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+/* Exo thin font from Google. */
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+.jumbotron {
+  color: #999;
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: center;
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 1.92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 1.92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 1.92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 1.92s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+body::before {
+  font-size: 8rem;
+  font-weight: 100;
+  font-style: normal;
+}
+

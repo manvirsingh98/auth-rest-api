@@ -34,30 +34,178 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="text-muted">This is a template for a simple marketing or informational website. It includes a
-                large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to
-                create something more unique.</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+            <h1>{{getData.title}}</h1>
+            <p class="text-muted">{{getData.desc}}</p>
+            <p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Download my resume</a>
+                <a class="btn btn-secondary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+
         </div>
     </div>
 
     <div class="container">
         <!-- Example row of columns -->
-        <div class="row shadow bg-white rounded" id="language">
+        <div class="row shadow-md bg-white rounded languages" id="language">
             <div class="col-md-12">
-                <div class="languages">
-
-                </div>
-
+                <h2 class="text-center mb-4">Skills</h2>
+                <hr class="bottom-line">
             </div>
+            <div class="col-md-12">
+                <ul class="list-inline dev-icons text-center">
+                    <li class="list-inline-item">
+                        <i class="fab fa-html5"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-css3-alt"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-js-square"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-angular"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-react"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-node-js"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-sass"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-less"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-wordpress"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-gulp"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-grunt"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-npm"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-html5"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-css3-alt"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-js-square"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-angular"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-react"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-node-js"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-sass"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-less"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-wordpress"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-gulp"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-grunt"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-npm"></i>
+                    </li>
+                </ul>
+                
+            </div>
+            
+            
         </div>
 
 
     </div> <!-- /container -->
+
 
 </main>
 
 <footer class="container">
     <p>footer</p>
 </footer>
+
+{{!-- <header>
+    <nav class="navbar">
+  <a href="#" id="logo">Logo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<section id="hero1" class="hero">
+  <div class="inner">
+    <div class="copy">
+    <h1>Choice mountains bro</h1>
+    <p>Its like im actually there! But sitting at a computer. Wow, the future is intense!</p>
+    </div>
+  </div>
+</section>
+
+<section class="content">
+  <div class="inner">
+    <div class="copy">
+    <h1>Amazing copy!</h1>
+    <p>The words are like jumping out at me man! </p>
+    </div>
+  </div>
+</section>
+
+<section id="hero2" class="hero">
+  <div class="inner">
+    <div class="copy">
+    <h1>Dem some big ass caves</h1>
+    <p>You could probably fit in there ;)</p>
+    </div>
+  </div>
+</section>
+  
+<section class="content">
+  <div class="inner">
+    <div class="copy">
+    <h1>An inspiring quote</h1>
+      <p>/-- file not found --/</p>
+    </div>
+  </div>
+</section> --}}
