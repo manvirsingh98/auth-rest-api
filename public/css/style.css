@@ -261,7 +261,8 @@ body .admin {
 }
 .jumbotron {
   padding-top: 15rem;
-  padding-bottom: 15rem;;
+  padding-bottom: 15rem;
+  margin-bottom: 0px !important;
 }
 
 .languages {
@@ -279,12 +280,21 @@ body .admin {
 .dev-icons {
   font-size: 3rem;
 }
-.dev-icons .list-inline-item i:hover {
+
+.dev-icons li {
+  width: 68px;
+  height: 68px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;}
+
+.dev-icons li:hover {
+ background-color: mediumslateblue;
+ color: #fff;
+}
+
+/* .dev-icons .list-inline-item i:hover {
   color: mediumslateblue;
-}
-.list-inline-item:not(:last-child) {
-  margin-right: .5rem;
-}
+} */
+
 
 /* Cool infinite background scrolling animation.
  * Twitter: @kootoopas
@@ -358,3 +368,7 @@ body::before {
   font-style: normal;
 }
 
+#skills, #experience {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
