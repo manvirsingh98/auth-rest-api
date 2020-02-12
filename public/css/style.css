@@ -284,7 +284,12 @@ body .admin {
 .dev-icons li {
   width: 68px;
   height: 68px;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;}
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  margin-bottom: 15px !important;
+  /* transform: translatey(0px);
+    animation: float 6s ease-in-out infinite; */
+}
+
 
 .dev-icons li:hover {
  background-color: mediumslateblue;
@@ -368,7 +373,20 @@ body::before {
   font-style: normal;
 }
 
-#skills, #experience {
+#skills, #experience, #quote, #education {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+/* 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+} */
+

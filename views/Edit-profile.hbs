@@ -1,0 +1,22 @@
+<div class="jumbotron jumbotron-fluid py-5">
+    <div class="container">
+        <h1 class="display-4">{{getUser.name}}</h1>
+        <p class="lead">{{getUser.email}}</p>
+    </div>
+</div>
+<div class="container">
+       <form>
+                <h4>Header</h4>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Title</label>
+                            <input type="text" class="form-control" name="title" id="title" value="{{getData.title}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Example textarea</label>
+                            <input class="form-control" name="desc" id="exampleFormControlTextarea1" value=" {{getData.desc}}">
+                        </div>
+                        <a href="/profile" class="btn btn-primary">Update</a>
+                    </form> 
+
+
+</div>
